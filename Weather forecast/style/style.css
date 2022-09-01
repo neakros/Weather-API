@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    color: white;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+details {
+    text-align: center;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    position: relative;
+}
+
+footer {
+    padding: 5px;
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+    background-color: limegreen;
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(0,98,0);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button_on {
+    color: white;
+    background-color: rgb(0,98,0);
+}
+
+.wrapper {
+    margin: 5% auto;
+    max-width: 500px;
+    border: 1px solid limegreen;
+    box-shadow: 0 0 12px 4px limegreen;
+    border-radius: 10px;
+}
+
+.city_name {
+    width: 70px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.weather_info {
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    justify-content: center;
+}
+
+/*=================================*/
+
+.accordion_title::before {
+    content: "\142F";
+}
+
+details[open] .accordion_title::before {
+    content: "\1431";
+    color: limegreen;
+}
+
+.accordion_title:hover {
+    color: limegreen;
+    transition: .5s;
+}
+.arrow_deg::after {
+    content: "\1F811";
+    font-size: 20px;
+}
+
+.accordion_body {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid limegreen;
+    padding: 10px;
+}
+
+.accordion_body div {
+    font-size: 13px;
+}
+
+.border_right {
+    border-right: 1px solid limegreen;
+    padding-right: 15px;
+}
+
+/*==================================*/
+
+.week_wrapper {
+    display: none;
+    border: 1px solid limegreen;
+    box-shadow: 0 0 12px 4px limegreen;
+    padding: 10px;
+    position: absolute;
+    left: 105%;
+}
+
+.week_date div {
+    font-size: 15px;
+    padding: 0 7px;
+    border-right: limegreen 1px solid;
+    text-align: center;
+    border-bottom: limegreen 1px solid;
+    width: 45px;
+}
+
+.week_temp div {
+    font-size: 15px;
+    padding: 0 7px;
+    border-right: limegreen 1px solid;
+    text-align: center;
+    width: 45px;
+}
+
+.week_date div:nth-last-child(1) {
+    border-right: none;
+    padding-right: 4px;
+}
+
+.week_temp div:nth-last-child(1) {
+    border-right: none;
+    padding-right: 4px;
+}
+
+.side_arrow {
+    font-size: 23px;
+    font-weight: bolder;
+    margin-top: 15px;
+    height: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.side_arrow:hover {
+    transform: rotate(180deg);
+    color: limegreen;
+}
